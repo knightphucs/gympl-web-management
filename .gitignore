@@ -49,3 +49,6 @@ typings/
 # System files
 .DS_Store
 Thumbs.db
+
+# Dotenv
+.env
