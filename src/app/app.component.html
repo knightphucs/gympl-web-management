@@ -1,4 +1,12 @@
-<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<ng-container>
+  <app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+</ng-container>
+<ng-container>
+  <app-header
+    [collapsed]="isSideNavCollapsed"
+    [screenWidth]="screenWidth"
+  ></app-header>
+</ng-container>
 <app-body 
   [collapsed]="isSideNavCollapsed"
   [screenWidth]="screenWidth"
